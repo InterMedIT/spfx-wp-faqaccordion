@@ -2,11 +2,11 @@
 
 ## Summary
 
-- Extends the [FAQ Accordion webpart](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-dynamic-section) by Valeras Narbutas, which extended [the orginal](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-section) by Erik Benke and Mike Zimmerman. In addition to a category select, this version includes selecting a list on a specific site (defaults to current site), and selecting a column on which to sort displayed items.
+- Extends the [FAQ Accordion webpart](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-dynamic-section) by Valeras Narbutas, which extended [the orginal](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-section) by Erik Benke and Mike Zimmerman. This version adds a site select and sort order column select to the properties panel.
 - Adds a collapsible accordion widget ideal for displaying FAQs to a SharePoint page or Teams Tab.
 - Allows display of rich text, including hyperlinks and images.
-- This will generate an accordion with one section for each item in the list.
-- Modifications to the source list are automatically reflected in the webpart.
+- Generates an accordion with one section for each item in the list.
+- Modifications to the source list are reflected in the webpart.
 - Category column allows multiple FAQ webparts to draw from and be managed by a single list.
 
 ## Usage
