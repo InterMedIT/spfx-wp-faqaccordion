@@ -3,14 +3,11 @@
 ## Summary
 
 - Extends the [FAQ Accordion webpart](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-dynamic-section) by Valeras Narbutas, which extended [the orginal](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-accordion-section) by Erik Benke and Mike Zimmerman. In addition to a category select, this version includes selecting a list on a specific site (defaults to current site), and selecting a column on which to sort displayed items.
-- Adds a collapsible accordion section to an Office 365 SharePoint page or Teams Tab.
-- Ideal for displaying FAQs.
+- Adds a collapsible accordion widget ideal for displaying FAQs to a SharePoint page or Teams Tab.
 - Allows display of rich text, including hyperlinks and images.
-- When adding the web part, you'll be prompted to select a list from a property panel dropdown (target list must be created beforehand with FAQ type Question and Answer and at least one Choice type column for determining the category. You can optionally include a sort column).
-- The web part expects a column called Category of type choice. This column allows multiple FAQ webparts to draw from and be managed by a single list.
-- The web part will automatically load all the properties in three dropdowns. One for Accordion Title, one for Accordion Content that must be html type, and one for category that must be of type choice. The user can select different options for these three dropdowns, however.
 - This will generate an accordion with one section for each item in the list.
-- Modifications/deletions/additions to the list items in the target list of an added web part are automatically reflected on the page.
+- Modifications to the source list are automatically reflected in the webpart.
+- Category column allows multiple FAQ webparts to draw from and be managed by a single list.
 
 ## Usage
 
@@ -21,11 +18,13 @@
     4. SortOrder (optional)
 2. The default Title column that comes with a new SharePoint list can be renamed to "Question". After creating the other columns with the above names, you can rename them to whatever you want and the internal names (that the webpart uses for settings defaults) will remaine the same.
 3. The **Answer** column should be of type **Multiple lines of text**. The Category column must be named **Category** and must be of type **Choice**. The **Sort Order** column is optional (items will be sorted by internal list ID by default), and can be of type **Single line of Text**, or **Number**. Leaving the second place of a decimal number with two places as 0 allows for future FAQ insertions without having to modify all items to maintain sort order.
+
 ![Create a list for use with the Accordion](./assets/sp-list-example.png)
 
 4. Add the `faq-accordion.sppkg` to your SharePoint App Catalog and enable it on any sites you wish to add it to.
 5. Edit a SharePoint page and select the new FAQ Accordion webpart.
 6. Configure the webpart and publish the page
+
 ![Configure the FAQ Accordion webpart](./assets/faqaccordion-demo.gif)
 
 ## Used SharePoint Framework Version
