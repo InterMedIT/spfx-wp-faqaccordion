@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.0",
+    "libraryName": "faq-accordion",
+    "libraryId": "e1af937d-5610-4211-af2f-e0cc491877a7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "faq-accordion",
+    "solutionShortDescription": "faq-accordion description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

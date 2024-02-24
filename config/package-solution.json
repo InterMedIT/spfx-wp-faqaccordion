@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "FAQ Accordion",
+    "id": "e1af937d-5610-4211-af2f-e0cc491877a7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Scott Lyons",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Displays a list of FAQs as an accordion webpart."
+      },
+      "longDescription": {
+        "default": "This custom webpart can display a list of FAQs defined in a SharePoint list as an collapseable accordion interface."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "faq-accordion Feature",
+        "description": "The feature that activates elements of the faq-accordion solution.",
+        "id": "864f4743-7477-42ca-836f-5d146fe47d9e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/faq-accordion.sppkg"
+  }
+}
